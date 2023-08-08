@@ -1,0 +1,243 @@
+body {
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+}
+
+.container {
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    width: 400px;
+    padding: 50px 20px 80px;
+    margin: 50px auto 10px;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+.heading h1 {
+    color: rgb(32,33,36);
+    font-size: 24px;
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-align: center;
+}
+.heading p {
+    color: rgb(32,33,36);
+    font-size: 18px;
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.email input {
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 90%;
+    height: 50px;
+    outline: none;
+    padding-left: 10px;
+}
+.email input:focus {
+    border: 2px solid rgb(26,115,232);
+}
+.forgot-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.forgot-email a {
+    color: rgb(26,115,232);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+}
+.note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.note p {
+    color: rgb(95,99,104);
+    font-size: 14px;
+    line-height: 1.4286;
+    margin-top: 32px;
+    width: 92%;
+}
+.note a {
+    color: rgb(26,115,232);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    position: relative;
+    text-decoration: none;
+}
+.sign {
+    margin-top: 30px;
+}
+.next {
+    position: relative;
+    display: inline;
+}
+.next button {
+    color: #fff;
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    background-color: rgb(26,115,232);
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.8s;
+    transition: box-shadow 0.8s;
+}
+
+.next button:hover {
+    background-color: rgb(21, 89, 177);
+    box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
+}
+.create {
+    position: relative;
+    display: inline;
+    
+    
+}
+
+.create button {
+    color: rgb(26,115,232);
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    background: none;
+    width: auto;
+    margin-right: 50%;
+    height: 35px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+.create button:hover {
+    background-color: #e7eaf0;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list {
+    position: relative;
+    left: 40px;
+}
+.list ul li{
+    display: inline-flex;
+    height: 30px;
+
+}
+.list ul li:hover {
+    background-color: #eeeeee;
+    border-radius: 4px;
+}
+.list ul li a{
+    text-decoration: none;
+    color: rgb(60,64,67);
+    font-size: 13px;
+    padding: 8px;
+}
+
+.drop {
+    position: relative;
+    right: 40px;
+}
+
+.drop select {
+    outline: none;
+    border: none;
+    overflow: auto;
+    color: rgb(60,64,67);
+    height: 50px;
+}
+.drop select:focus {
+    background-color: #eeeeee;
+    border-radius: 4px;
+}
+
+
+/* Mobile veiwport */
+
+@media screen and (max-width: 600px){
+
+.container {
+    border: none;
+    width: 100%;
+    margin: 0px auto 30%;
+    padding: 30px 0 0 0;
+}
+.email input {
+    font-size: 96%;
+    width: 90%;
+}
+
+.note p {
+    width: 87%;
+}
+
+.create {
+    left: 5%;
+    margin: 0;
+}
+.next {
+    position: relative;
+    left: 5%;
+    margin: 0;
+}
+}
+
+@media screen and (max-width: 438px) {
+
+.container {
+    margin: 0px auto 20%;
+}
+
+.next {
+    position: relative;
+    left: 0;
+    margin: 0;
+}
+
+footer {
+    display: block;
+}
+
+.drop {
+    position: fixed;
+    left: 90px;
+}
+
+.list {
+    position: fixed;
+    margin-top: 30px;
+}
+}
